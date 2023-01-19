@@ -257,25 +257,26 @@ namespace UTB.Eshop.Web.Models.Database
             Membership ms1 = new Membership()
             {
                 Id = 1,
-                Name = "One year",
+                Name = "Customer",
                 Discount = 5,
+                Status = 0,
             };
 
             Membership ms2 = new Membership()
             {
                 Id = 2,
-                Name = "Two years",
-                Discount = 10
-
+                Name = "Member",
+                Discount = 5,
+                Status = 1,
 
             };
 
             Membership ms3 = new Membership()
             {
                 Id = 3,
-                Name = "5+ years",
-                Discount = 20
-
+                Name = "Manager",
+                Discount = 15,
+                Status = 1,
 
 
             };

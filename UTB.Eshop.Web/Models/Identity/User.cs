@@ -14,6 +14,6 @@ namespace UTB.Eshop.Web.Models.Identity
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public string Member { get; set; }
+        //public string Member { get; set; }
     }
 }

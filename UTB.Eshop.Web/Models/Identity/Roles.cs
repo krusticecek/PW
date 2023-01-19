@@ -9,6 +9,7 @@ namespace UTB.Eshop.Web.Models.Identity
     {
         Admin,
         Manager,
-        Customer
+        Customer,
+        Member
     }
 }

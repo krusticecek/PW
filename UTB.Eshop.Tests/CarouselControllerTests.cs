@@ -118,10 +118,10 @@ namespace UTB.Eshop.Tests
         {
             //zkuste doplnit tak, aby objekt pro CarouselItem nebyl validni, coz bude spravny vysledek testu ;-)
             var fileCheckContent = new Mock<ICheckFileContent>();
-            fileCheckContent.Setup(fcc => fcc.CheckFileContent(It.IsAny<IFormFile>(), It.IsAny<string>())).Returns(false);
+            fileCheckContent.Setup(fcc => fcc.CheckFileContent(It.IsAny<IFormFile>(), It.IsAny<string>())).Returns(false); // true -> false
 
             var fileCheckLength = new Mock<ICheckFileLength>();
-            fileCheckLength.Setup(fcl => fcl.CheckFileLength(It.IsAny<IFormFile>(), It.IsAny<long>())).Returns(false);
+            fileCheckLength.Setup(fcl => fcl.CheckFileLength(It.IsAny<IFormFile>(), It.IsAny<long>())).Returns(false); // true -> false
 
             var fileUpload = new Mock<IFileUpload>();
             //fileUpload.Setup(fu => fu.ContentType).Returns("image");
@@ -187,11 +187,11 @@ namespace UTB.Eshop.Tests
 
 
             int carouselCount = (await databaseContext.CarouselItems.ToListAsync()).Count;
-            Assert.Equal(0, carouselCount);
-            
-           //Assert.Single(await databaseContext.CarouselItems.ToListAsync());
-           //pozn. to aby test neprosel je v tuto chvili napsano schvalne, aby vas to upozornilo, ze mate jeste neco udelat
-           //Assert.True(false);
+            Assert.Equal(0, carouselCount);   // 1 -> 0
+
+            //Assert.Single(await databaseContext.CarouselItems.ToListAsync());
+            //pozn. to aby test neprosel je v tuto chvili napsano schvalne, aby vas to upozornilo, ze mate jeste neco udelat
+            //Assert.True(false);
         }
 
 

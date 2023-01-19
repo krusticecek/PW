@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UTB.Eshop.Web.Models.Database;
 
 namespace UTB.Eshop.Web.Migrations
 {
     [DbContext(typeof(EshopDbContext))]
-    partial class EshopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230119121903_upgrade")]
+    partial class upgrade
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -213,21 +215,21 @@ namespace UTB.Eshop.Web.Migrations
                         {
                             Id = 1,
                             Discount = 5,
-                            Name = "Customer",
-                            Status = 0
+                            Name = "One year",
+                            Status = 1
                         },
                         new
                         {
                             Id = 2,
-                            Discount = 5,
-                            Name = "Member",
+                            Discount = 10,
+                            Name = "Two years",
                             Status = 1
                         },
                         new
                         {
                             Id = 3,
-                            Discount = 15,
-                            Name = "Manager",
+                            Discount = 20,
+                            Name = "5+ years",
                             Status = 1
                         });
                 });
