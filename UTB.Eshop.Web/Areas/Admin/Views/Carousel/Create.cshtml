@@ -1,0 +1,17 @@
+﻿@model CarouselItem
+@{
+    ViewData["Title"] = "Vytvoření položky Carouselu";
+}
+<h1>@ViewData["Title"]</h1>
+
+@{ 
+    ViewBag.Action = "Create";
+}
+<partial name="CreateEditForm" model="Model" />
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/FileContentValidation.js"></script>
+    <script src="~/js/FileContentValidation.js"></script>
+}

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<UTB.Eshop.Web.Models.Entities.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1>Products</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table CarouselItem">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageSrc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>Edit</th>
+            <th>Details</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImageSrc)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+
+                <td><a asp-action="Edit" asp-route-id="@item.ID">Edit</a></td>
+                <td><a asp-action="Details" asp-route-id="@item.ID">Details</a></td>
+                <td><a asp-action="Delete" asp-route-id="@item.ID">Delete</a></td>
+
+            </tr>
+        }
+    </tbody>
+</table>

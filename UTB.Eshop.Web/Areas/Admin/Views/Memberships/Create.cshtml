@@ -1,0 +1,17 @@
+﻿@model UTB.Eshop.Web.Models.Entities.Membership
+@{
+    ViewData["Title"] = "Vytvoření položky Membership";
+}
+<h1>@ViewData["Title"]</h1>
+
+@{
+    ViewBag.Action = "Create";
+}
+<partial name="CreateEditForm" model="Model" />
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/FileSizeValidation.js"></script>
+    <script src="~/js/FileContentValidation.js"></script>
+}
