@@ -1,0 +1,132 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Implementation\\UTB.Eshop.Domain.Implementation.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Abstraction\\UTB.Eshop.Domain.Abstraction.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Abstraction\\UTB.Eshop.Domain.Abstraction.csproj",
+        "projectName": "UTB.Eshop.Domain.Abstraction",
+        "projectPath": "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Abstraction\\UTB.Eshop.Domain.Abstraction.csproj",
+        "packagesPath": "C:\\Users\\Kubrti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Abstraction\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kubrti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Implementation\\UTB.Eshop.Domain.Implementation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Implementation\\UTB.Eshop.Domain.Implementation.csproj",
+        "projectName": "UTB.Eshop.Domain.Implementation",
+        "projectPath": "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Implementation\\UTB.Eshop.Domain.Implementation.csproj",
+        "packagesPath": "C:\\Users\\Kubrti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Implementation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Kubrti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Abstraction\\UTB.Eshop.Domain.Abstraction.csproj": {
+                "projectPath": "C:\\Users\\Kubrti\\Desktop\\PW-main\\UTB.Eshop.Domain.Abstraction\\UTB.Eshop.Domain.Abstraction.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+﻿@model Product
+<form asp-action="@ViewBag.Action" method="post" enctype="multipart/form-data">
+    @{
+        if (ViewBag.Action == "Edit")
+        { 
+            <input asp-for="ID" type="hidden" />
+        }
+        
+    }
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label>Image</label>
+        @{
+            if (ViewBag.Action == "Edit")
+            {
+                <input asp-for="Image" class="form-control-file">
+            }
+           
+            else
+            {
+                <input asp-for="Image" class="form-control-file" data-val-required="The Image field is required.">
+            }
+        }
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Image Alternative Text</label>
+        <input asp-for="ImageAlt" class="form-control" placeholder="Enter Image Alt">
+        <span asp-validation-for="ImageAlt" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Price" class="control-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

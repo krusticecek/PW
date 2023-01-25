@@ -1,0 +1,15 @@
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\bin\Debug\net5.0\UTB.Eshop.Domain.Implementation.deps.json
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\bin\Debug\net5.0\UTB.Eshop.Domain.Implementation.dll
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\bin\Debug\net5.0\UTB.Eshop.Domain.Implementation.pdb
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\bin\Debug\net5.0\UTB.Eshop.Domain.Abstraction.dll
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\bin\Debug\net5.0\UTB.Eshop.Domain.Abstraction.pdb
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\UTB.Eshop.Domain.Implementation.csproj.AssemblyReference.cache
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\UTB.Eshop.Domain.Implementation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\UTB.Eshop.Domain.Implementation.AssemblyInfoInputs.cache
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\UTB.Eshop.Domain.Implementation.AssemblyInfo.cs
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\UTB.Eshop.Domain.Implementation.csproj.CoreCompileInputs.cache
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\UTB.Eshop.Domain.Implementation.csproj.CopyComplete
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\UTB.Eshop.Domain.Implementation.dll
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\refint\UTB.Eshop.Domain.Implementation.dll
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\UTB.Eshop.Domain.Implementation.pdb
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Implementation\obj\Debug\net5.0\ref\UTB.Eshop.Domain.Implementation.dll

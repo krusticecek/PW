@@ -1,0 +1,130 @@
+﻿@model HomeIndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@{
+    if (Model != null && Model.CarouselItems.Count > 0)
+    {
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                @{
+                    for (int i = 0; i < Model.CarouselItems.Count; ++i)
+                    {
+                        string ActiveClass = String.Empty;
+                        if (i == 0)
+                        {
+                            ActiveClass = "class=active";
+                        }
+                        <li data-target="#carouselExampleIndicators" data-slide-to="@i" @ActiveClass></li>
+                    }
+                }
+            </ol>
+            <div class="carousel-inner">
+                @{
+                    for (int i = 0; i < Model.CarouselItems.Count; ++i)
+                    {
+                        string ActiveClass = String.Empty;
+                        if (i == 0)
+                        {
+                            ActiveClass = "active";
+                        }
+                        <div class="carousel-item @ActiveClass">
+                            <img class="d-block w-100" src="@Model.CarouselItems[i].ImageSrc" alt="@Model.CarouselItems[i].ImageAlt">
+                        </div>
+                    }
+                }
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    }
+}
+
+
+
+@{
+    <h1 style="display:flex;justify-content:center;color:red">Manga for sale</h1>
+
+    int slevaVProcentech = 0;
+
+    @if (User.Identity.IsAuthenticated == true && Model.userUser!=null)
+    {
+        slevaVProcentech = @Model.userUser.MemberName.Discount;
+        if(slevaVProcentech != 0){
+            <div style="display:flex;justify-content:center">Máš @slevaVProcentech % slevu</div>
+        }
+        else
+        {
+            <div style="display:flex;justify-content:center">Nemáš slevu</div>
+        }
+
+        
+    }
+
+    
+
+    if (Model != null && Model.Products != null && Model.Products.Count > 0)
+    {
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-start">
+                    @{
+                        for (int i = 0; i < Model.Products.Count; ++i)
+                        {
+                            <div class="col mb-5">
+                                <div class="card h-100">
+                                    <!-- Product image-->
+                                    <!-- style="max-height: 250px"-->
+                                    <a asp-controller="Product" asp-action="Detail" asp-route-ID="@Model.Products[i].ID">
+                                        <img class="card-img-top" src="@Model.Products[i].ImageSrc" height="250" />
+                                    </a>
+                                    <!-- Product details-->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                            <!-- Product name-->
+                                            <h5 class="fw-bolder">@Model.Products[i].Name</h5>
+                                            <!-- Product price-->
+                                            @if(slevaVProcentech == 0)
+                                            {
+                                                @Model.Products[i].Price
+                                            }
+                                            else
+                                            {
+                                                double price = @Model.Products[i].Price;
+                                                price -= (price * slevaVProcentech / 100);
+                                                <span class="text-muted text-decoration-line-through">@Model.Products[i].Price CZK</span>
+                                                <div style="color:red">@price CZK</div>
+                                            }
+                                        </div>
+                                    </div>
+                                    <!-- Product actions-->
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="Buy(@Model.Products[i].ID,'@Url.Action("AddOrderItemsToSession", "CustomerOrderNotCart", new { Area = "Customer" })', '#total_price', '@System.Globalization.CultureInfo.CurrentCulture.Name')">Buy</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    <!-- Section-->
+                </div>
+            </div>
+        </section>
+    }
+}
+
+@section Scripts
+{
+    <environment include="Development">
+        <script src="~/js/Product.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/Product.min.js"></script>
+    </environment>
+}

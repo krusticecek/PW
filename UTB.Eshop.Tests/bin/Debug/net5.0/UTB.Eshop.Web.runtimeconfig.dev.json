@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Kubrti\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Kubrti\\.nuget\\packages"
+    ]
+  }
+}

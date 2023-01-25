@@ -1,0 +1,15 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Editace položky Produktu";
+    ViewBag.Action = "Edit";
+}
+<h1>@ViewData["Title"]</h1>
+
+<partial name="CreateEditForm" model="Model" />
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/FileContentValidation.js"></script>
+    <script src="~/js/FileSizeValidation.js"></script>
+}

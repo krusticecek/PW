@@ -1,0 +1,12 @@
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\bin\Debug\net5.0\UTB.Eshop.Domain.Abstraction.deps.json
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\bin\Debug\net5.0\UTB.Eshop.Domain.Abstraction.dll
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\bin\Debug\net5.0\UTB.Eshop.Domain.Abstraction.pdb
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\UTB.Eshop.Domain.Abstraction.csproj.AssemblyReference.cache
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\UTB.Eshop.Domain.Abstraction.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\UTB.Eshop.Domain.Abstraction.AssemblyInfoInputs.cache
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\UTB.Eshop.Domain.Abstraction.AssemblyInfo.cs
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\UTB.Eshop.Domain.Abstraction.csproj.CoreCompileInputs.cache
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\UTB.Eshop.Domain.Abstraction.dll
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\refint\UTB.Eshop.Domain.Abstraction.dll
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\UTB.Eshop.Domain.Abstraction.pdb
+C:\Users\Kubrti\Desktop\PW-main\UTB.Eshop.Domain.Abstraction\obj\Debug\net5.0\ref\UTB.Eshop.Domain.Abstraction.dll
